@@ -1,0 +1,29 @@
+detectron2 models
+* training:
+Mask RCNN
+dataset in COCO format
+pretrained model and weights: mask_rcnn_X_101_32x8d_FPN_3x.yaml
+learning rate: 0.0001
+max_iter: 10000
+ROI batch size per image:128
+class number:1
+images per batch: 2
+
+* predicting
+score thresh hold: 0.7
+
+average precision for bounding box: 
+{'AP': 53.404385157480135, 
+'AP50': 78.3629924554271, 
+'AP75': 62.370719474242165, 
+'APs': 25.155744592931445, 
+'APm': 68.7504999515425, 
+'APl': 62.5215343958674}
+
+average precision for segmentation: 
+{'AP': 51.48889488808642, 
+'AP50': 79.32434091150814, 
+'AP75': 60.922519327867455, 
+'APs': 24.303773628198158, 
+'APm': 65.5958902453733, 
+'APl': 61.98536662239743}
